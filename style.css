@@ -1,0 +1,457 @@
+* {
+    font-family: 'Lexend', sans-serif;
+  }
+  
+  h4 {
+    font-size: 17px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-gap: 1.5rem;
+    justify-items: center;
+    padding: 0;
+  }
+  
+  .gallery-caption {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #333333;
+    color: #d9d9d9;
+  }
+  
+  .gallery-caption-center {
+    align-items: center;
+  }
+  
+  .gallery-text {
+    position: absolute;
+    max-width: 200px;
+    margin: 0;
+    padding: .5rem;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: rgba(0,0,0,.5);
+    color: #f2f2f2;
+  }
+  
+  .gallery-center {
+    align-items: center;
+  }
+  
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  footer li {
+    list-style: none;
+  }
+  
+  footer a {
+    color: #E63462;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+  }
+  
+  footer a:hover {
+    letter-spacing: 2px;
+    color: #ad0a35;
+    transition: all .3s ease-in-out;
+  }
+  
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-icons a {
+    text-decoration: none;
+  }
+  
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    transition: all .3s ease-in-out;
+  }
+  
+  .fa-twitter:hover {
+    color: #55ACEE;
+    transition: all .3s ease-in-out;
+  }
+  
+  .fa-facebook:hover {
+    color: #3B5998;
+    transition: all .3s ease-in-out;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-evenly;
+  }
+  
+  .gallery-item {
+    height: 150vh;
+    margin: 5px;
+    filter: grayscale(70%);
+    transition: all .5s ease-in-out;
+    text-align: center;
+  }
+  
+  .gallery-item:hover {
+    filter: grayscale(0%);
+    transition: all .5s ease-in-out;
+  }
+  
+  body {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #333745;
+  }
+  
+  h2 {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333745;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1.5px;
+    color: #333745;
+  }
+  
+  p {
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 1.2px;
+  }
+  
+  /* Resizing for mobile/etc. */
+  
+  @media only screen and (max-width: 640px) {
+    
+    .gallery-text {
+    font-size: 8px;
+      line-height: 8px;
+  }
+    
+    .gallery-caption {
+    background-color: transparent;
+  }
+    
+    .container-image {
+      display: none;
+    }
+    
+    .container {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 200px;
+      padding: 50px;
+    }
+    
+    img {
+      width: 30%;
+      height: auto;
+    }
+    
+    .container-description {
+      width: 300px;
+    }
+    
+    h1 {
+      font-size: 40px;
+    }
+    
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+    }
+    
+    h3 {
+      font-size: 15px;
+      line-height: 15px;
+    }
+    
+  }
+  
+  /* GIF animates upon hover */
+  
+  .static {
+    position: absolute;
+    background: #f0e9d8;
+  }
+  
+  .static:hover {
+    opacity: 0;
+  }
+  
+  /* Container */
+  
+  /* Defining a flex container */
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 30px;
+    list-style: none;
+    background: #f0e9d8;
+    align-items: center;
+    height: 420px;
+  }
+  
+  .container-description {
+    padding: 5px;
+    width: 600px;
+    min-height: 400px;
+    line-height: 25px;
+    color: black;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .container-image {
+    width: 400px;
+    min-height: 400px;
+    margin: auto;
+  }
+  
+  /* Consulted this Medium piece for reference: https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793 */
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+  }
+  
+  .menu-toggle {
+    display: inline-block;
+    padding: 1em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    color: #c00;
+  }
+  
+  .main-menu {
+    position: absolute;
+    display: none;
+    left: -200px;
+    top: 0;
+    height: 100%;
+      overflow-y: scroll;
+      overflow-x: visible;
+      transition: left 0.3s ease, box-shadow 0.3s ease;
+      z-index: 999;
+  }
+  
+  .main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 2.5em 0 0;
+    box-shadow: -8px 0 8px rgba(0,0,0,.5);
+    min-height: 100%;
+    width: 200px;
+    background: #1a1a1a;
+  }
+  
+  .main-menu a {
+    display: block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #383838;
+  }
+  
+  .main-menu li:first-child a {
+    border-top: 1px solid #383838;
+  }
+  
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: #333;
+    text-decoration: underline;
+  }
+  
+  .main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .main-menu:target,
+  .main-menu[aria-expanded="true"] {
+    display: block;
+    left: 0;
+    outline: none;
+    box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  }
+  
+  .main-menu:target .menu-close,
+  .main-menu[aria-expanded="true"] .menu-close {
+    z-index: 1001;
+  }
+  
+  .main-menu:target ul,
+  .main-menu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: absolute;
+    display: block;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #000;
+    background: rgba(0,0,0,.85);
+  }
+  
+  @supports (position: fixed) {
+    .main-menu,
+    .main-menu:target + .backdrop,
+    .main-menu[aria-expanded="true"] + .backdrop{
+      position: fixed;
+    }
+  }
+  
+  /* Hamburger menu appears on mobile/other similarly thin windows */
+  
+  @media (min-width: 640px) {
+  /*   Only show on mobile */
+    .menu-toggle, .main-menu .menu-close {
+      display: none;
+    }
+    
+    .main-menu {
+      position: relative;
+          left: auto;
+          top: auto;
+          height: auto;
+      display: block;
+    }
+    
+    .main-menu ul {
+      display: flex;
+      padding: 0;
+      box-shadow: none;
+      height: auto;
+      width: auto;
+      background: none;
+    }
+    
+    .main-menu a {
+      color: #E63462;
+      border: 0 !important;
+      transition: all .3s ease-in-out;
+    }
+    
+    .main-menu a:hover,
+    .main-menu a:focus {
+      background: none;
+      letter-spacing: 2px;
+      color: #ad0a35;
+      transition: all .3s ease-in-out;
+      text-decoration: none;
+    }
+  }
+  
+  /* Button styling */
+  
+  .button {
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: all .6s ease-in-out;
+    border: 2px solid #ff8780;
+  }
+  
+  .button:hover {
+    background-color: #ff8780;
+    transition: all .6s ease-in-out;
+  }
+  
+  ul {
+      list-style-type: none;
+  }
+  
+  /* Form styling */
+  
+  input[type=text], select {
+    width: 80%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Submit button */
+  
+  input[type=submit] {
+    background-color: #ff8780;
+    color: white;
+    cursor: pointer;
+    width: 80%;
+    border: none;
+    border-radius: 16px;
+    padding: 15px;
+    margin: 8px;
+    transition: all .4s ease-in-out;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #eb6250;
+    transition: all .4s ease-in-out;
+  }

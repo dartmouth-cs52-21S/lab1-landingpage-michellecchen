@@ -2,57 +2,131 @@
 <html>
 
 <head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<!--   Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  
     <link rel="stylesheet" type="text/css" href="style.css">
+  
 </head>
 
 <body>
-
-    <nav>
-        <ul>
-          <li><a href="#">Sign in</a></li>
-          <li><a href="#">Join now</a></li>
-        </ul>
+  
+  <header>
+    <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open menu">
+      <span class="sr-only">Open menu</span>
+      <span class="fa fa-bars" aria-hidden="true"></span>
+    </a>
+    
+    <h1 class="logo">NAPS @ DARTMOUTH</h1>
+    
+    <nav id="main-menu" class="main-menu" aria-label="Main menu">
+      <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close menu">
+        <span class="sr-only">Close menu</span>
+      <span class="fa fa-close" aria-hidden="true"></span>
+      </a>
+      <ul>
+        <li><a href="#">Create account</a></li>
+        <li><a href="#">Sign in</a></li>
+      </ul>
     </nav>
-
-    <h1>Superior napping spots at Dartmouth College</h1>
-
-    <p>We know classes are stressful, and 8 hours of sleep per night can be hard to come by — which is why we've curated a list of superior napping spots at Dartmouth College, cherrypicked for their (a) provision of shade, (b) peace and quiet, and (c) comfy furniture.</p>
-
-    <button type="button">See them here!</button>
+    <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+  </header>
   
-  <h1>Want to sign up for our newsletter?</h1>
+  <div class="container">
+    
+    <div class="container-image">
+      <img class="static" src="https://i.imgur.com/NcRb1W1.gif" width=300px>
+      <img class="active" src="https://media3.giphy.com/media/Zcci1utNi0VeM5qlWw/source.gif" width=300px>
+      </div>
+    
+    <div class="container-description">
+      
+      <h2>Feeling tired?</h2>
+      
+      <h3>We know classes are stressful, and 8 hours of sleep can be hard to come by. That's why we've curated a list of superior napping spots at Dartmouth College, chosen for their provision of shade, peace and quiet, and comfy furniture.</h3>
+      
+      <button class="button">See them here</button>
+    
+    </div>
+  </div>
   
-  <p>Get exclusive updates on the nappability of new buildings on campus, as well as free offers of eyemasks, sponsored by Collis.</p>
+  <center>
+  <h2>featured</h2>
+    <h4>Our top picks for the month of April</h4>
+  </center>
   
-  <div>
+  <div class="gallery">
+    
+    <div class="gallery-caption gallery-caption-center">
+      <img src="https://images.adsttc.com/media/images/51f7/3860/e8e4/4ef7/d400/0084/large_jpg/MSA_BlackFamilyVAC_ArchDaily_2012AG44.436.jpg?1375156302" width=400px>
+      <p class="gallery-text">The red couches located on the first floor of the Visual Arts building are plush and inviting. There <i>will</i> be some students milling around, but they're typically rather quiet.</p>
+    </div>
+    
+    <div class="gallery-caption gallery-caption-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Baker_Tower_and_Library_%287103709429%29.jpg" width=400px>
+      <p class="gallery-text">The grass on the Green just outside Baker-Berry Library is a nice place to settle down on a warm, sunny day! Sadly, due to the subzero temperatures that Hanover is prone to providing in the winter, this is a seasonally limited option.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    
+    <div class="container-description">
+      
+      <h2>Sign up for our monthly newsletter</h2>
+      
+      <h3>Get exclusive updates on the nappability of new buildings on campus, as well as free offers of eyemasks, sponsored by Collis.</h3>
+      
+      <div>
   <form action="/action_page.php">
-    <label for="fname">Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<!--     <label for="fname">Name</label> -->
+    <input type="text" id="fname" name="firstname" placeholder="Name">
 
-    <label for="lname">Email</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<!--     <label for="lname">Email</label> -->
+    <input type="text" id="lname" name="lastname" placeholder="Email (@dartmouth.edu)">
 
-    <label for="year">Class year</label>
-    <select id="year" name="year">
+<!--     <label for="year">Class year</label> -->
+<!--     <select id="year" name="year">
       <option value="freshman">'24</option>
       <option value="sophomore">'23</option>
       <option value="junior">'22</option>
       <option value="senior">'21</option>
-    </select>
+    </select> -->
   
     <input type="submit" value="Submit">
   </form>
 </div>
-
-    <footer>
       
-      <ul>
-        <li>Our mission</li>
-        <li>Contact us</li>
-        <li>Get involved</li>
-      </ul>
+    </div>
+    
+    <div class="container-image">
+      <img src="https://i.gifer.com/XcF0.gif" width=300px>
+    </div>
+    
+  </div>
 
-    </footer>
+    <div class="footer-icons">
+      
+      <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+
+    </div>
+  
+  <footer>
+    <li><a href="#">Our mission</a></li>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Get involved</a></li>
+  </footer>
 
 </body>
 
