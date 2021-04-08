@@ -1,4 +1,4 @@
-# Title
+# NAPS @ DARTMOUTH
 
 A page advertising a (fake) organisation at Dartmouth College. It's dedicated itself to cherrypicking the best napping spots on capmus, and distributing them via newsletter, as well as nominating a couple of such spots per month.
 
